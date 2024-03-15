@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Log in</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contactanos</h1>
+        <p> campos obligatorios *</p>
+    </header>
+
+    <div>
+        <form action="mailto:mail@mail.com" method="post">
+
+            <div>
+                <label>
+                    *Nombre:
+                    <input type="text" name="nombre" required>
+                </label>
+            </div>
+            <div>
+                <label for="campoEmail">
+                    *Email:
+                </label>
+                <input type="email" name="email" required id="campoEmail">
+            </div>
+            
+            <div>
+                <label>
+                    Cumpleaños:
+                    <input type="date" name="fechaCumple">
+                </label>
+            </div>    
+            
+            <div>
+                *Asunto:
+                <select name="asunto" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="cons">Consulta</option>
+                    <option value="pres">presupuesto</option>
+                    <option value="recl">Reclamo</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Genero: </p>
+                F <input type="radio" name="genero" value="fem">
+                M <input type="radio" name="genero" value="masc">
+                X <input type="radio" name="genero" value="otro">
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="news" value="si" checked>
+                    Suscribirme al newsletter (alto SPAM)
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="terminos" value="si" required>
+                    Acepto terminos y condiciones
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    *Mensaje:
+                    <textarea name="mensaje" maxlength="140" ></textarea>
+                    <span>(máximo 140 caracteres)</span>
+                </label>
+            </div>
+
+            <!-- nombre / email / fecha / asunto / genero / newsletter / mensaje -->
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
