@@ -1,0 +1,54 @@
+body {
+    background: rgb(166, 193, 27);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: white;
+}
+
+header{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#color-header{
+    color: red;
+}
+
+header,nav,section,footer{
+    background: rgba(255, 255, 255, 0.565);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+/* selector de clase */
+.primerParrafo{
+    color: rgb(152, 152, 152);
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.section{
+    background: rgb(255, 255, 255);
+}
+
+/* selector de id */
+#section-main{
+    border: 1px solid rgb(67, 67, 67);
+}
+
+/* selector universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
