@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* fuentes locales -> en el sitio
+.ttf / .otf
+*/
+@font-face {
+    font-family: "Bevan";
+    src: url("fonts/Bevan.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* degradado */
+    background: linear-gradient(tomato,gold);
+    font-family:"Montserrat"; 
+    font-size: 16px;
+}
+h2{
+    color: white;
+}
+
+header{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* text-align: center; */
+    /* height: 50vh;
+    width: 50vw; */
+}
+    header h1{
+        font-family: "Tourney";
+    }
+
+nav{
+    font-family: "Bevan";
+}
+
+
+#color-header{
+    color: red;
+}
+
+header,nav,section,footer{
+    background: rgba(255, 255, 255, 0.565);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .contenido-principal{
+        border: 1px solid black;
+    }
+
+    /* section{
+    background: url("../img/superman.png"), rgba(32, 23, 199, 0.565);
+    background-size: 100%;
+    } */
+
+    .textos{
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        font-size: 14px;
+        }
+        /* selector con anidacion */
+        .textos p{
+            margin-bottom: 1em;
+            font-size: 1.2em;
+        }
+
+p{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 14px;
+}
+
+/* selector de clase */
+.primerParrafo{
+    color: rgb(152, 152, 152);
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.section{
+    background: rgb(255, 255, 255);
+}
+
+/* selector de id */
+#section-main{
+    border: 1px solid rgb(67, 67, 67);
+}
+
+/* selector universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* modelo de caja
+width + padding + border
+*/
+.boxmodel{
+    display: flex; flex-wrap: wrap;
+    }
+    .cajas{
+        background: rgb(30, 30, 135);
+        /* width: calc(50% - 20px - 10px); */
+        width: 33%;
+        padding: 20px;
+        border: 10px solid black;
+        box-sizing: border-box;
+    }
+
+    /* menu de navegacion */
+    .navbar{
+        /* padding: 2%; */
+
+        }
+        .navbar ul{
+            list-style-type: none;
+            display: flex; flex-wrap: wrap;
+            }
+            /* .navbar ul li{} */
+                .navbar ul li a{
+                    padding: 10px;
+                    margin-left: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+                /* :pseudoclases -> se añade a los selectores y que especifica un estado especial del elemento seleccionado */
+                /* ::pseudoelementos */
+                .navbar ul li a:hover{
+                    background: rgba(255, 255, 255, 0.779);
+                }
+                .navbar ul li a:active{
+                    background: rgba(255, 255, 255, 0.779);
+                }
+
+                ::selection{
+                    background: rgb(20, 35, 196);
+                }
+
+
+/* posicionamiento
+
+position: static
+
+                relative / absolute / fixed / sticky
+        z-index
+*/
+.promo{
+    background: rgb(192, 33, 163);
+    color: white;
+    font-weight: bold ;
+    text-align: center;
+    padding: 1%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+section{
+    position: relative;
+    z-index: 0;
+}
