@@ -13,8 +13,11 @@
             width: 80%;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 30% 40% auto; /* Dos columnas de igual ancho */
-            column-gap: 10px;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+            
         }
 
         .item {
@@ -31,7 +34,7 @@
 
     <div class="container">
         <div class="item">Elemento 1</div>
-        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque accusantium ut sit laboriosam quod voluptates. Adipisci consequatur placeat, natus dolorem quod itaque aperiam impedit hic provident iure voluptate, enim sunt.</div>
+        <div class="item">Elemento 2</div>
         <div class="item">Elemento 3</div>
         <div class="item">Elemento 4</div>
         <div class="item">Elemento 5</div>

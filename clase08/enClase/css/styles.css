@@ -22,15 +22,20 @@ html{
 .container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-
+    flex-wrap: wrap ;
+    justify-content: space-around ;
     }
     .item{
-        width: 24%;
         background: white;
         margin-bottom: 10px;
+        width: 27.76%;
+        order: 0;
+    }
+    /*Flex para los items */
+    .i8{
+        order:-1;
+        background: tomato;
+        flex-grow: 2;
     }
 
     .news-sec{
@@ -40,7 +45,7 @@ html{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         }
         .banner{
             width: 30%;
