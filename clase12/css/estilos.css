@@ -1,0 +1,30 @@
+/* Fonts Google */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@100;500;600&display=swap');
+
+/* Iconos - FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+
+html{
+    font-family: "Montserrat";
+    font-size: 16px;
+    scroll-behavior:smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat";
+}
+.header a, .header button{
+    color: white;
+}
+
+.bg01{background: tomato;}
+.bg02{background: rgb(211, 167, 7);}
+.bg03{background: rgb(59, 147, 11);}
+.bg04{background: rgb(12, 98, 135);}
+.bg05{background: rgb(76, 16, 180);}
+

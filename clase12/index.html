@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Componentes</title>
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+
+    <header class="container-fluid bg04 header mb-5">
+        <div class="container">
+            
+            <nav class="navbar navbar-expand-lg">
+
+                <div class="container-fluid">
+                    <h1>
+                        <a class="navbar-brand" href="#">CaC Movies</a>
+                    </h1>
+
+                   <!-- boton menu hamburguesa -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                    <!-- <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form> -->
+
+                    <!-- menu de navegacion -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Peliculas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Series</a>
+                      </li>                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                      </li>
+                    </ul>
+
+
+                  </div>
+                </div>
+              </nav>    
+        </div>
+    </header>
+
+    <section class="container-fluid">
+        <div class="container">
+            <h2>Accordion</h2>
+
+            <div class="accordion" id="accordionExample">
+                
+                <div class="accordion-item bg03">
+                  <h2 class="accordion-header ">
+                    <button class="accordion-button bg03" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      
+                      <i class="bi bi-boombox-fill h1"></i>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem!</div>
+                        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem!</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        Terminos y condiciones
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+
+
+        <hr class="mt-5">
+
+        <div class="container">
+            <h2>Formularios Validacion</h2>
+
+            <!-- Fomulario -->
+            <form class="row g-3 needs-validation" novalidate action="mailto:mail@mail.com" method="post">
+
+                <div class="col-md-12">
+                  <label for="validationCustom01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationCustom01" required name="nombre">
+                  <div class="valid-feedback">
+                    dato correcto!
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="validationCustomUsername" class="form-label">Email</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required name="email">
+                    <div class="invalid-feedback">
+                      Escriba un email correcto
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="validationCustom04" class="form-label">Localidad</label>
+                  <select class="form-select" id="validationCustom04" required name="localidad">
+                    <option selected disabled value="">Seleccionar...</option>
+                    <option>CABA</option>
+                  </select>
+                </div>
+                
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="ok" id="invalidCheck" required name="acepta-terminos">
+                    <label class="form-check-label" for="invalidCheck">
+                      Aceptar terminos y condiciones
+                    </label>
+                    <div class="invalid-feedback">
+                      Dato necesario.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar Datos</button>
+                </div>
+              </form>
+
+        </div>
+
+
+    </section>
+
+    <footer class="container-fluid bg-dark mt-5 p-5 text-center">
+        <div class="container text-white">
+            <p>2024 - Derechos Reservados</p>
+            <p>Codo a Codo 4.0 - Buenos Aires</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/validacionBS.js"></script>
+
+</body>
+</html>
