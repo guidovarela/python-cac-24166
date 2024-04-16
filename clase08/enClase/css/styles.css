@@ -56,13 +56,18 @@ html{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2%;
     background: white;
     margin-bottom: 10px;
     }
+    .search{
+        width: 30%;
+    }
     nav{
         padding-right: 5%;
     }
+    
 
 /* noticias */
 .news-main{
