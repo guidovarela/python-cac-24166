@@ -3,9 +3,20 @@ Utilizamos un bucle for para imprimir números del 1 al 5 en la consola.
 El bucle for tiene una variable de control i que comienza en 1, verifica si i es menor o igual a 5 en cada iteración y aumenta i en 1 en cada ciclo.
 */
 
-for (let i = 1; i <= 5; i++) {
-    console.log(i);
+// for(iniciador;condicion;incremento){}
+
+for (let i = 0; i <= 100; i=i+10) {
+    // console.log(i);
+    document.write(i+"<br>")
 }
+
+// i=1
+// while(i <= 100){
+//     document.write(i+"<br>")
+//     i++
+// }
+
+
 
 
 
