@@ -4,6 +4,8 @@
 # print(lista)
 
 # FORMA N2
+# from documento import funcion,funcion,funcion
+# from documento import *
 from funcion_externa import crear,saludar
 
 lista = crear(3)
