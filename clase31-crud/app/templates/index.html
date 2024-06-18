@@ -33,6 +33,21 @@
         </nav>
     </header>
 
+    <section class="datausers">
+        {% for i in users %}
+            <div class="user">
+                <div class="nombre">
+                    {{i.nombre}}
+                </div>
+                <a href="mailto:{{i.email}}">{{i.email}}</a>
+                <br>
+                <a href="https://linkedin.com/{{i.linkedin}}">
+                    Linkedin
+                </a>
+                            
+            </div>
+        {% endfor %}
+        </section>
     
     <div>esto es el footer</div>
 </body>
