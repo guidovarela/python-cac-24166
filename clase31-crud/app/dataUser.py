@@ -31,6 +31,13 @@ users = [{
             "puesto":"Dev Ops",
             "linkedin":"user",
             "email":"maximo@sitio.com"
+        },
+        {
+            "id":"5",
+            "nombre":"Damian Perez",
+            "puesto":"Desarrollador Python",
+            "linkedin":"damianperez",
+            "email":"damian@sitio.com"
         }
     ]
 

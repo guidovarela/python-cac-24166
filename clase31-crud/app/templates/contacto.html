@@ -1,22 +1,44 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-</head>
+
+{% include 'defaults/head.html' %}
+
 <body>
-    <header>
-        <h1>{{title}}</h1>
-
-    </header>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet corrupti vero? Quae minus inventore minima pariatur, nam libero asperiores ea deserunt, eos vel tempora itaque iusto ut officiis corrupti!</p>
-
-    <a id="click" href="/">volver</a>
-
-    <script>
-        let link = document.getElementById("click")
-        link.addEventListener("click",alert("esto es JS en Python"))
-    </script>
+    {% include 'defaults/header.html' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="title ">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+            <div class="col-6">
+                <form action="" method="post" class="w-75">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">localidad</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="localidad">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-dark" >
+                            <i class="bi bi-send"></i> Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    {% include 'defaults/footer.html' %}
+    
 </body>
 </html>
