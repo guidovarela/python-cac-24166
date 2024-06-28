@@ -6,16 +6,30 @@
 
     <section class="container">
         
-        <h1>{{title}}</h1>
+        <h1 class="mb-5">{{title}}</h1>
     
-        <div>
-            DB conectada: {{conexion}}
+        <a href="tienda/cargar_producto" class="btn btn-warning">Nuevo Producto</a>
+
+        <div class="h4 text-white">
+            <div class="row">
+                {% for i in productos%}
+                <div class="col">
+                    {{i[1]}} / {{i[2]}}
+                </div>
+                <div class="col-2">
+                    <a href="/tienda/editar_producto/{{i[0]}}">editar</a>
+                    <a href="/tienda/borrar_producto/{{i[0]}}">borrar</a>
+                </div>                
+                <hr>
+                {% endfor %}
+            </div>
         </div>
         
         <a href="/" class="btn btn-dark"><i class="bi bi-chevron-double-left"></i> volver</a>
 
     </section>
     {% include 'defaults/footer.html' %}
+
 
 </body>
 </html>
