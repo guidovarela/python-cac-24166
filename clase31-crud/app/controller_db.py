@@ -11,7 +11,7 @@ def obtener_productos():
     # consulta db
     with conexion.cursor() as cursor:
         # Read a single record
-        query = "SELECT * FROM productos"
+        query = "SELECT * FROM productos ORDER BY precio"
         # query2=f"SELECT * FROM productos where id = {id}"
         cursor.execute(query)
     # procesar los resultados -> fetch

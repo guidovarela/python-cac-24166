@@ -10,25 +10,25 @@
         <a href="/tienda" class="btn btn-link"><i class="bi bi-chevron-double-left"></i> volver</a>
         
         <div class="form">
-            <form action="/tienda/guardar_nuevo_producto" method="POST" class="w-75">
+            <form id="form-new-product" action="/tienda/guardar_nuevo_producto" method="POST" class="w-75">
                 <div class="mb-3">
                     <label for="input1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="input1" name="nombre">
+                    <input type="text" class="form-control" id="input1" name="nombre" required>
                 </div>
                 <div class="mb-3">
                     <label for="textarea1" class="form-label">Descripcion</label>
-                    <textarea class="form-control" id="textarea1" name="descripcion"></textarea>
+                    <textarea class="form-control" id="textarea1" name="descripcion" required></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="input3" class="form-label">Precio</label>
-                    <input type="number" class="form-control" id="input3" name="precio">
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-dark" >
-                        <i class="bi bi-send"></i> Guardar Producto
-                    </button>
+                    <input type="number" class="form-control" id="input3" name="precio" required>
                 </div>
             </form>
+            <div>
+                <button form="form-new-product" type="submit" class="btn btn-dark" >
+                    <i class="bi bi-send"></i> Guardar Producto
+                </button>
+            </div>
         </div>
         
         

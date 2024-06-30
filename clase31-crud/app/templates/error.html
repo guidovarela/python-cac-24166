@@ -1,0 +1,26 @@
+{% include 'defaults/head.html' %}
+
+<body>
+    
+    {% include 'defaults/header.html' %}
+    
+    <div class="container">
+        <div class="p-5">
+            <div class="w-50 mx-auto">
+                <img class="img-fluid" src="{{url_for('static', filename='img/error-404.png')}}" alt="error 404">
+            </div>
+
+            <div class="error bg-white rounded">
+                {{error}}
+            </div>
+
+            <div class="back">
+                <a href="/" class="btn btn-dark"><i class="bi bi-chevron-double-left"></i> home</a>
+            </div>
+        </div>
+    </div>
+
+    {% include 'defaults/footer.html' %}
+
+</body>
+</html>

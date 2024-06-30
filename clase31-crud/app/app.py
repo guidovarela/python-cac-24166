@@ -10,6 +10,10 @@ def dataHome():
     title = "Hola Mundo!"
     # return render_template("plantilla.html",datos)
     return render_template('index.html',titulo=title,users=users)
+# error
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('error.html', error=error), 404
 
 @app.route("/persona/<int:id>")
 def dataUsers(id):

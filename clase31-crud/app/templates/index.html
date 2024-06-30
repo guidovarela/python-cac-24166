@@ -15,13 +15,18 @@
     {% include 'defaults/header.html' %}
 
     <section class="container">
+
+        <div>
+            
+        </div>
+
         <div class="users">
             <div class="title">
                 <h1>{{title}}</h1>
             </div>
             {% for i in users %}
             <a href="/persona/{{i.id}}">
-                <div class="card">
+                <div class="card p-2 mb-2">
                     <div class="card-title">
                         {{i.nombre}}
                     </div>
@@ -32,7 +37,7 @@
         </section>
     
     
+        {% include 'defaults/footer.html' %}
         <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
-
 </body>
 </html>
