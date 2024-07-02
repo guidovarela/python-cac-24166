@@ -1,0 +1,41 @@
+Documentacion Flask: https://flask.palletsprojects.com/en/2.1.x/deploying/
+
+Servidores Python:
+	Python Anywhere
+	Heroku
+	Digital Ocean
+
+#Registro en pythonanywhere.com
+	# Verificar la cuenta, para completar el Registro
+
+# 1 - Gestionar los archivos por GIT
+	# Es necesario subir el contenido de la app a un repositorio en Github
+
+	Iniciar consola "Bash"
+		git clone (url repo)
+
+	# 1.1 - crear entorno virtual: 
+	comandos:
+		virtualenv --python=python3.8 .venv
+		source .venv/bin/activate
+		pip install (dependencias) -> ej: Flask, pymysql
+
+# 2 - Gestionar el servidor MySQL
+	Iniciar una consola "MySQL"
+	(solo admite comandos SQL -> "help" devuelve un listado de ellos)
+	
+		show databases;
+		use (nombre Db elegida);
+		(si nos hay tablas, ejecutar la consulta para crearla)
+
+# 3 - Verificar los datos de conexion a MySQL (desarrollando en local, usamos los de Wamp)
+	host="user.mysql.pythonanywhere-services.com"
+	user="user"
+	password=(tu clave de MySQL)
+	database="user$nombreBaseDatos"
+
+# 4 - Crear Web app
+	definir ubicacion de VirtualEnv (URL y ubicacion)
+	definir Static Files : /static y /templates (URL y ubicacion)
+	!-- Cada cambio en los archivos debe refrescarse con el boton de "Reload user.pythonanywhere.com"
+	URL de la app: http://user.pythonanywhere.com
